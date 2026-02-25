@@ -14,7 +14,6 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     user = authenticate_user(form_data.username, form_data.password, db)
 
-    # ملاحظة أمنية: الأفضل ما نفرّق بين "يوزر مش موجود" و "باسورد غلط"
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
