@@ -1,6 +1,6 @@
 import streamlit as st
-from ..UI import init_state, require_login, auth_headers
-from ..api import list_files, upload_file, download_file, delete_file
+from UI import init_state, require_login, auth_headers
+from api import list_files, upload_file, download_file, delete_file
 
 st.set_page_config(page_title="My Files", layout="wide")
 init_state()

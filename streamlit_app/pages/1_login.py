@@ -1,6 +1,6 @@
 import streamlit as st
-from ..UI import init_state, logout
-from ..api import login
+from UI import init_state, logout
+from api import login
 
 st.set_page_config(page_title="Login", layout="wide")
 init_state()

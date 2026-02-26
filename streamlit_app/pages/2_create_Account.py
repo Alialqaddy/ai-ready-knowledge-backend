@@ -1,6 +1,6 @@
 import streamlit as st
-from ..UI import init_state
-from ..api import create_account
+from UI import init_state
+from api import create_account
 
 st.set_page_config(page_title="Create Account", layout="wide")
 init_state()

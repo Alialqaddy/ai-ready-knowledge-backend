@@ -82,7 +82,6 @@ def update_me(
 def create_user(
     payload: UserCreate,
     db: Session = Depends(get_db),
-    _admin: User = Depends(require_admin),
 ):
     _ensure_unique_email(db, str(payload.email))
     _ensure_unique_username(db, payload.username)
