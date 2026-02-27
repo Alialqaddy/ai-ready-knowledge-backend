@@ -33,6 +33,13 @@ This phase is intentionally LLM/RAG-free and focuses on building a strong backen
 
 NOTE: Streamlit is only for testing/demo purposes and not intended as a production UI.
 
+## Application preview
+![App screenshot](images/welcome_page.png)
+![App screenshot](images/Login_page.png)
+![App screenshot](images/Create_Account_page.png)
+![App screenshot](images/MyFiles_page.png)
+
+
 ### Database & Migrations
 - SQLAlchemy ORM
 - Alembic migrations
